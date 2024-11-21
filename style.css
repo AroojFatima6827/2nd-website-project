@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: rgb(217, 180, 58); 
+    min-height: 10vh;      
+}
+.list-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 55%;
+    transform: translateY(-30px);
+
+       
+}
+.navbar {
+    display: flex;
+    margin-left: 5rem;
+    padding-top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+ .img {
+    display: flex;
+    justify-content: left;
+    margin-left: 8rem;
+    margin-top: 4rem;
+}
+
+/* Specific image styling */
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 20px #e2bb0acc;
+    animation: float 2s infinite ease-in-out; /* Floating animation */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Hover effect directly on the image */
+img:hover {
+    box-shadow: 0px 0px 30px #e2bb0aff; /* Darker shadow on hover */
+}
+
+/* Keyframes for smooth up-down movement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(-5px); /* Slight upward movement */
+    }
+}
+.section {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 35%;
+    position: relative;
+    bottom: 21rem;
+    width: 40vw;
+}
+#intro {
+    font-size: 2rem;
+    font-weight: 600;
+}
+#name {
+    font-size: 3rem;
+}
+#info {
+    font-size: 1.8rem;
+}
+.icons {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.icons i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e2bb0aff;
+    color: white;
+    display: flex; /* For center alignment */
+    justify-content: center; /* Horizontally center icon */
+    align-items: center; /* Vertically center icon */
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 20px; /* Adjust size of the icon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.icons i:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 0px 15px #e2bb0aff; /* Dark shadow on hover */
+}
+.cv {
+    display: flex;
+    margin-top: 1.8rem;   
+}
+.cv button {
+    height: 34px;
+    width: 26%;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.cv button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+
+.About {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    background-color: #dcbd4c;
+    position: relative;
+    bottom: 16rem;
+    padding-left: 4rem;
+    padding-top: 6rem;
+
+}
+.About h1 {
+    font-size: 3rem;
+}
+.About h3 {
+    font-size: 1.8rem;
+}
+.About p {
+    width: 50vw;
+}
+.img1 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.img1 img {
+    position: relative;
+    right: 15%;
+    bottom: 70%;
+}
+.Read button {
+    height: 34px;
+    width: 10%;
+    margin-top: 1rem;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.Read button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 11rem;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    position: relative;
+    bottom: 7rem;
+    cursor: pointer;
+    
+}
+
+.container i {
+    font-size: 4rem;
+}
+.container h1 {
+    font-size: 1.8rem;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcbd4c;
+    height: 60vh;
+    width: 100vw;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcbd4c;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.box3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcbd4c;
+    height: 60vh;
+    width: 100vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+.box1 button {
+    height: 35px;
+    width: 27%;
+    margin-top: 1rem;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box1 button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+
+.box2 button {
+    height: 35px;
+    width: 27%;
+    margin-top: 1rem;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box2 button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+
+.box3 button {
+    height: 35px;
+    width: 27%;
+    margin-top: 1rem;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box3 button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+
+.h1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4rem;
+    font-size: 3rem;
+} 
+.contact {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.contact input {
+    position: relative;
+    bottom: 1rem;
+    margin-right: 2rem;
+    height: 7vh;
+    width: 30%;
+    border-radius: 0.8rem;
+    border: 2px solid  #e2bb0aff;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.contact1 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contact1 input {
+    position: relative;
+    bottom: 1rem;
+    margin-right: 2rem;
+    height: 7vh;
+    width: 30%;
+    border-radius: 0.8rem;
+    border: 2px solid  #e2bb0aff;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.contact2 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contact2 input {
+    position: relative;
+    bottom: 1rem;
+    margin-right: 2rem;
+    height: 35vh;
+    width: 63%;
+    border-radius: 0.8rem;
+    border: 2px solid  #e2bb0aff;
+    padding-left: 1rem;
+    padding-bottom: 10rem;
+    font-size: 1rem;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send button {
+    height: 34px;
+    width: 13%;
+    background-color: #e2bb0acc;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    border: 2px solid white;
+    font-size: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.send button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px #e2bb0aff;
+}
+
+footer {
+    height: 30vh;
+    background-color: #e2bb0acc;
+    margin-top: 2rem;
+}
+.icons1  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3rem;
+} 
+
+.icons1 i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e2bb0aff;
+    color: white;
+    display: flex; /* For center alignment */
+    justify-content: center; /* Horizontally center icon */
+    align-items: center; /* Vertically center icon */
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 20px; /* Adjust size of the icon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+     
+}
+
+.icons1 i:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 0px 15px #e2bb0aff; /* Dark shadow on hover */
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    font-weight: 400;
+}
+
+    /* Add responsive adjustments */
+
+/* Default menu icon hidden for larger screens */
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* For screens smaller than 768px (Mobile View) */
+@media (max-width: 768px) {
+    /* Hide the default navigation list and stack them vertically */
+    .list-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(217, 180, 58);
+        position: absolute;
+        top: 60px; /* Position under the navbar */
+        left: 0;
+    }
+
+    .list-menu li {
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .list-menu a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+        display: block;
+        padding: 10px;
+    }
+
+    /* Make the navbar flex and space items out */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Show the menu icon on smaller screens */
+    #menu-icon {
+        display: block;
+    }
+}
+
+/* To show the menu when clicked */
+.show-menu {
+    display: flex; /* Show the menu when this class is added */
+}
+
+/* Responsive adjustments for section layout */
+@media (max-width: 768px) {
+    .section {
+        margin-left: 10%;
+        width: 80%;
+        text-align: center; /* Center the text */
+        bottom: 0; /* Adjust the position for better spacing */
+    }
+
+    .img {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .About {
+        padding-left: 1rem; /* Less padding on smaller screens */
+        padding-top: 2rem;
+    }
+
+    .container {
+        flex-direction: column; /* Stack the service boxes vertically */
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100%; /* Make service boxes full width */
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .contact input, .contact1 input, .contact2 input {
+        width: 80%; /* Make contact inputs wider for small screens */
+    }
+
+    .contact, .contact1, .contact2 {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
